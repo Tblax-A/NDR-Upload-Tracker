@@ -1,0 +1,96 @@
+
+# ==========================================
+# NDR UPLOAD TRACKER — GIT IGNORE
+# ==========================================
+
+# 1. Operational health-facility data
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+*.tsv
+
+# Allow only a verified synthetic demo workbook if needed
+# !demo_data/synthetic_demo.xlsx
+
+# 2. Sensitive credentials and configuration
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# 3. Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 4. Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# 5. Build and packaging artifacts
+build/
+dist/
+*.spec
+*.egg-info/
+.eggs/
+
+# 6. Installation packages and archives
+# Review these before publishing or releasing
+*.zip
+*.7z
+*.rar
+
+# 7. Local application data and output
+data/
+logs/
+output/
+temp/
+tmp/
+*.log
+*.tmp
+*.bak
+*.backup
+
+# 8. Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# 9. IDE and editor settings
+.vscode/
+.idea/
+*.suo
+*.user
+
+# 10. Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# 11. Test and coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# 12. Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# 13. Local exports and reports
+reports/
+exports/
+*.pdf
+
+# 14. Keep Git configuration files trackable
+!.gitignore
+!.gitattributes
